@@ -10,6 +10,13 @@ Get help like this:
 
     docker run -v $(pwd):/code dcycle/php-lint
 
+To ignore certain lines in your PHP files:
+
+    // @codingStandardsIgnoreStart
+    ... 
+    // @codingStandardsIgnoreEnd
+
+
 Resources
 -----
 
