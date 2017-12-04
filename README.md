@@ -2,9 +2,9 @@ Lint PHP projects, including with the Drupal coding standard.
 
 For example:
 
-    docker run -v $(pwd):/code dcycle/php-lint --standard=DrupalPractice /code
-    docker run -v $(pwd):/code dcycle/php-lint --standard=Drupal /code
-    docker run -v $(pwd):/code dcycle/php-lint /code
+    docker run -v "$(pwd)":/code dcycle/php-lint --standard=DrupalPractice /code
+    docker run -v "$(pwd)":/code dcycle/php-lint --standard=Drupal /code
+    docker run -v "$(pwd)":/code dcycle/php-lint /code
 
 You will need to explicitly ignore js files or the Drupal and PHPCS linters will give conflicting information:
 
