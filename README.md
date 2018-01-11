@@ -1,4 +1,4 @@
-Lint PHP projects, including with the Drupal coding standard.
+Lint PHP projects using [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer), including with the Drupal coding standard.
 
 For example:
 
