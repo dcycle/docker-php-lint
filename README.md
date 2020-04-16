@@ -6,13 +6,13 @@ This image was first created on December 2nd, 2016 and was not updated before De
 
 For example:
 
-    docker run -v "$(pwd)":/code dcycle/php-lint:2 --standard=DrupalPractice /code
-    docker run -v "$(pwd)":/code dcycle/php-lint:2 --standard=Drupal /code
-    docker run -v "$(pwd)":/code dcycle/php-lint:2 /code
+    docker run --rm -v "$(pwd)":/code dcycle/php-lint:2 --standard=DrupalPractice /code
+    docker run --rm -v "$(pwd)":/code dcycle/php-lint:2 --standard=Drupal /code
+    docker run --rm -v "$(pwd)":/code dcycle/php-lint:2 /code
 
 You will need to explicitly ignore js files or the Drupal and PHPCS linters will give conflicting information:
 
-    docker run -v "$(pwd)":/code \
+    docker run --rm -v "$(pwd)":/code \
       dcycle/php-lint:2 \
       --ignore=data/*,*.js \
       --standard=Drupal \
@@ -21,7 +21,7 @@ You will need to explicitly ignore js files or the Drupal and PHPCS linters will
 
 Get help like this:
 
-    docker run -v $(pwd):/code dcycle/php-lint:2 --help
+    docker run --rm -v $(pwd):/code dcycle/php-lint:2 --help
 
 To ignore certain lines in your PHP files:
 
