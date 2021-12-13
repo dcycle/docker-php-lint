@@ -1,8 +1,12 @@
+#!/bin/bash
+#
+# CI testing.
+#
 set -e
-docker pull node
-docker pull dcycle/php-lint
-docker build -t local-dcycle-php-lint-image .
 
+docker build -f="Dockerfile2" -t local-dcycle-php-lint-image .
+docker run --rm local-dcycle-php-lint-image --help
+docker build -f="Dockerfile3" -t local-dcycle-php-lint-image .
 docker run --rm local-dcycle-php-lint-image --help
 
-docker run --rm dcycle/php-lint:1 --help
+docker build -f="Dockerfile-name" -t image-name .
