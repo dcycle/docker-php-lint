@@ -10,7 +10,6 @@ This image was first created on December 2nd, 2016 and was not updated before De
 For example:
 
     docker run --rm -v "$(pwd)":/code dcycle/php-lint:3 --standard=DrupalPractice /code
-    docker run --rm -v "$(pwd)":/code dcycle/php-lint:3 --standard=Drupal /code
     docker run --rm -v "$(pwd)":/code dcycle/php-lint:3 /code
 
 You will need to explicitly ignore js files or the Drupal and PHPCS linters will give conflicting information:

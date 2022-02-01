@@ -18,6 +18,7 @@ apt-get update && \
 
 composer global require \
   squizlabs/php_codesniffer \
+  slevomat/coding-standard \
   drupal/coder
 
 /root/.composer/vendor/bin/phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer
