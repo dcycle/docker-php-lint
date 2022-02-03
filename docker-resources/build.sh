@@ -17,8 +17,6 @@ apt-get update && \
   rm -rf /var/lib/apt/lists/*
 
 composer global require \
-  squizlabs/php_codesniffer \
-  slevomat/coding-standard \
-  drupal/coder
+  drupal/coder:8.3.13
 
 /root/.composer/vendor/bin/phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer

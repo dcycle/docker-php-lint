@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * Dummy file.
+ */
+
+/**
  * Concat two strings.
  *
  * @param string $a
@@ -12,5 +17,5 @@
  *   Concatenated string.
  */
 function dummy_function(string $a, string $b) : string {
-  return $a . ' ' $b;
+  return $a . ' ' . $b;
 }
