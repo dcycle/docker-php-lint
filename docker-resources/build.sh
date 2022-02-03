@@ -17,6 +17,6 @@ apt-get update && \
   rm -rf /var/lib/apt/lists/*
 
 composer global require \
-  drupal/coder:8.3.13
+  drupal/coder
 
 /root/.composer/vendor/bin/phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer
