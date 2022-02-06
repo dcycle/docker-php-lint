@@ -19,4 +19,9 @@ apt-get update && \
 composer global require \
   drupal/coder
 
-/root/.composer/vendor/bin/phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer
+# Thanks to IT-Cru
+# See https://www.drupal.org/project/coder/issues/3262291#comment-14400328
+/root/.composer/vendor/bin/phpcs --config-set installed_paths \
+  /root/.composer/vendor/drupal/coder/coder_sniffer,\
+  /root/.composer/vendor/sirbrillig/phpcs-variable-analysis,\
+  /root/.composer/vendor/slevomat/coding-standard
