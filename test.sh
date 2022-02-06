@@ -11,13 +11,13 @@ echo ""
 echo ""
 
 echo " => Building version 2 for php 7"
-docker build --progress=plain -f="Dockerfile2" -t local-dcycle-php-lint-image .
+docker build -f="Dockerfile2" -t local-dcycle-php-lint-image .
 echo " => Running the help command (smoke test)"
 docker run --rm local-dcycle-php-lint-image --help
 echo " => Testing with Drupal"
 docker run --rm -v "$(pwd)/example-code":/code local-dcycle-php-lint-image --standard=Drupal /code
 echo " => Building version 3 for php 8"
-docker build --progress=plain -f="Dockerfile3" -t local-dcycle-php-lint-image .
+docker build -f="Dockerfile3" -t local-dcycle-php-lint-image .
 echo " => Running the help command (smoke test)"
 docker run --rm local-dcycle-php-lint-image --help
 echo " => Testing with Drupal"
