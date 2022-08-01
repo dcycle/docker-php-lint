@@ -16,7 +16,6 @@ apt-get update && \
   apt-get install -y --no-install-recommends mariadb-client git unzip && \
   rm -rf /var/lib/apt/lists/*
 
-composer global require \
-  drupal/coder:8.3.13
+mv /docker-resources/composer.json /
 
-/root/.composer/vendor/bin/phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer
+composer update
