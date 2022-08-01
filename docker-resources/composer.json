@@ -1,0 +1,10 @@
+{
+    "require": {
+        "drupal/coder": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+         }
+    }
+}
