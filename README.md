@@ -31,6 +31,10 @@ To ignore certain lines in your PHP files:
     ...
     // @codingStandardsIgnoreEnd
 
+To automatically fix errors you can add `--entrypoint=/vendor/bin/phpcbf` before dcycle/php-lint:3 in your command, like this:
+
+    docker run --rm -v "$(pwd)":/code --entrypoint=/vendor/bin/phpcbf dcycle/php-lint:3 /code
+
 Resources
 -----
 
