@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/dcycle/docker-php-lint.svg?style=svg)](https://circleci.com/gh/dcycle/docker-php-lint)
+[![GitHub Actions](https://github.com/dcycle/docker-php-lint/actions/workflows/config.yml/badge.svg)](../../actions/workflows/config.yml)
 
 Lint PHP projects using [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer), including with the Drupal coding standard defined in the [coder module](https://www.drupal.org/project/coder).
 
